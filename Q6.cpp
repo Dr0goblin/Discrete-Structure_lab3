@@ -17,7 +17,9 @@ int binarySearch(int arr[], int l, int r, int x) {
 
 int main() {
     int arr[] = {2, 3, 4, 10, 40};
-    int x=20;
+    int x;
+    printf("Enter the number to search: \n");
+    scanf("%d",&x);
     int n = sizeof(arr) / sizeof(arr[0]);
     int result = binarySearch(arr, 0, n - 1, x);
     if (result == -1)
@@ -26,5 +28,4 @@ int main() {
         printf("Element is present at index %d", result);
     return 0;
 }
-
 
