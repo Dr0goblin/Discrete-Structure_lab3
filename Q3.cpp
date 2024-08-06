@@ -25,6 +25,11 @@ void printArray(int arr[], int n) {
 int main() {
     int arr[] = {12, 11, 13, 5, 6};
     int n = sizeof(arr) / sizeof(arr[0]);
+    cout << "Array Elements before insertion_sort:"<<endl;
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+    cout<<"The array after insertion_sort:"<<endl;
 
     insertionSort(arr, n);
 
@@ -32,4 +37,3 @@ int main() {
 
     return 0;
 }
-
